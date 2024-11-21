@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+
+header {
+  padding: 10px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .interface .logo img {
+  width: 200px;
+}
+
+header .menu-desktop ul li a {
+  color: #afafaf;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header .menu-desktop ul li a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+header .menu-desktop ul {
+  list-style-type: none;
+}
+
+header .menu-desktop ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.btn-contact button {
+  padding: 8px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #00ff00;
+  transition: 0.3s;
+}
+
+.btn-contact button:hover {
+  box-shadow: 0px 0px 8px #00ff00;
+  transform: scale(1.02);
+}
+
+/* ESTILO DO TOPO SITE */
+
+section.topo-site {
+  padding: 100px 4%;
+}
+
+section.topo-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+.topo-site .txt-topo h1 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-site .txt-topo p {
+  color: #fff;
+  font-size: 14px;
+  margin: 40px 0;
+  line-height: 15px;
+}
+
+.topo-site .img-topo img {
+  width: 350px;
+  position: relative;
+  animation: imgflutuante 2s ease-in-out infinite alternate;
+}
+
+@keyframes imgflutuante {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 30px;
+  }
+}
+
+/*  FIM ESTILO TOPO */
+
+/* SOBRE */
+
+section.sobre {
+  padding: 40px 4%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 120px;
+}
+
+.sobre .txt-sobre h2 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+
+.sobre .txt-sobre h2 span {
+  color: #00ff00;
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.sobre .img-sobre img {
+  width: 300px;
+  height: 350px;
+  border-radius: 30%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border: none;
+  box-shadow: 0px 0px 20px 4px #00ff00;
+}
+
+.sobre .txt-sobre .bnt-social i {
+  font-size: 40px;
+  margin: 0 5px;
+  color: #00ff00;
+}
+
+/* FIM SOBRE */
+
+/* HABILIDADES */
+
+section.skills {
+  padding: 40px 4%;
+  margin-top: 200px;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.skills .flex {
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.skills .interface h2 {
+  display: flex;
+  color: #fff;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.skills .skills-box {
+  color: #fff;
+  width: 250px;
+  height: 250px;
+  padding: 40px;
+  border: 0;
+  background-color: #2b2a2a3f;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 0px #fff;
+  transition: 2s;
+}
+
+.skills .skills-box:hover {
+  transform: scale(1.04);
+}
+
+.skills .skills-box i {
+  font-size: 90px;
+  color: #00ff00;
+  display: flex;
+  justify-content: center;
+}
+
+.skills .skills-box p {
+  font-size: 14px;
+  margin: 50px 4;
+  text-align: center;
+}
+
+.skills .skills-box h3 {
+  font-size: 22px;
+  margin: 25px;
+  text-align: center;
+}
+
+/* PORTFÓLIO */
+
+section.portfolio {
+  padding: 80px 4%;
+}
+
+section.portfolio .flex {
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 50% 0;
+  transition: 8s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+}
+
+.img-port:hover {
+  background-position: 50% 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a1;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.portfolio .interface h2 {
+  display: flex;
+  color: #fff;
+  font-size: 40px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn-port {
+  padding: 8px 20px;
+  background-color: transparent;
+  border: 1px solid #00ff00;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.btn-port a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.btn-port:hover {
+  background-color: #49d449b0;
+  box-shadow: 0px 0px 8px #eef0ee;
+  transform: scale(1.02);
+}
+
+/* FIM PORTFÓLIO */
+
+/*  FOOTER */
+
+footer {
+  padding: 5px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer > .interface .logo-footer img {
+  width: 180px;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .bnt-social i {
+  font-size: 40px;
+  margin: 0 5px;
+  color: #00ff00;
+}
+
+footer .line-footer i {
+  font-size: 40px;
+  margin: 0 5px;
+  color: #00ff00;
+}
+
+footer .line-footer p {
+  color: #fff;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+  header > .interface {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .menu-desktop ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .menu-desktop ul li {
+    padding: 10px 0;
+  }
+
+  section.topo-site .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .topo-site .txt-topo h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .topo-site .txt-topo p {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .topo-site .img-topo img {
+    width: 280px;
+  }
+
+  section.sobre .flex {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+
+  .sobre .img-sobre img {
+    width: 200px;
+    height: 250px;
+  }
+
+  section.skills .flex {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .skills .skills-box {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .skills .skills-box h3 {
+    font-size: 15px;
+    margin: 15px;
+    text-align: center;
+  }
+
+  section.portfolio .flex {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .img-port {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-contact button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  header .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .topo-site .txt-topo h1 {
+    font-size: 24px;
+  }
+
+  .topo-site .txt-topo p {
+    font-size: 14px;
+    margin: 0 4%;
+  }
+
+  .sobre .txt-sobre p {
+    font-size: 14px;
+
+    margin: 0 2%;
+  }
+  .sobre .img-sobre img {
+    width: 200px;
+    height: 250px;
+  }
+
+  footer > .interface .logo-footer img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  header > .interface {
+    padding: 10px 2%;
+  }
+
+  .topo-site .txt-topo h1 {
+    font-size: 20px;
+  }
+
+  .topo-site .img-topo img {
+    width: 200px;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 24px;
+  }
+
+  .sobre .img-sobre img {
+    width: 150px;
+    height: 190px;
+  }
+
+  .skills .skills-box {
+    width: 150px;
+    padding: 15px;
+  }
+
+  .img-port {
+    height: 200px;
+  }
+}
