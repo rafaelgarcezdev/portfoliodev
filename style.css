@@ -240,7 +240,9 @@ section.portfolio {
 }
 
 section.portfolio .flex {
+  display: flex;
   justify-content: space-around;
+  gap: 12px;
   margin-top: 80px;
 }
 
@@ -249,9 +251,9 @@ section.portfolio .flex {
   height: 460px;
   background-size: cover;
   background-position: 50% 0;
-  transition: 8s;
+  transition: 7s;
   cursor: pointer;
-  border-radius: 40px;
+  border-radius: 20px;
   position: relative;
 }
 
