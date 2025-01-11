@@ -145,8 +145,8 @@ section.sobre .flex {
 }
 
 .sobre .img-sobre img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -401,8 +401,9 @@ footer .line-footer p {
   }
 
   .sobre .img-sobre img {
-    width: 200px;
+    width: 250px;
     height: 250px;
+    margin-bottom: 20px;
   }
 
   section.skills .flex {
