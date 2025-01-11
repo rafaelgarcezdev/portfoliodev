@@ -241,7 +241,8 @@ section.portfolio {
 
 section.portfolio .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 80px;
 }
